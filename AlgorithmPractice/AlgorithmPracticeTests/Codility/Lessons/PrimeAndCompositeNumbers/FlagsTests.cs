@@ -34,5 +34,15 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
 
             Assert.AreEqual(actual, expected);
         }
+
+        [TestMethod()]
+        public void SolutionTest_4()
+        {
+            var array = new[] { 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1 };
+            var actual = Flags.Solution(array);
+            var expected = 4;
+
+            Assert.AreEqual(actual, expected);
+        }
     }
 }

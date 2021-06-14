@@ -90,7 +90,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers
             // distance between two peaks must equal or more than two
             if (peaks.Count <= 2) return peaks.Count; 
 
-            var maxFlag = Math.Min(peaks.Count, (int)Math.Sqrt(A.Length));
+            var maxFlag = Math.Min(peaks.Count, (int)Math.Sqrt(A.Length) + 1);
             for (var k = maxFlag; k >= 2; k--)
             {
                 var distance = 0;
