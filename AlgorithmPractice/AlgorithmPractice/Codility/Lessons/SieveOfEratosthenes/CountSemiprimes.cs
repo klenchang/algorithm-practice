@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AlgorithmPractice.Codility.Lessons.SieveOfEratosthenes
+﻿namespace AlgorithmPractice.Codility.Lessons.SieveOfEratosthenes
 {
     public class CountSemiprimes
     {
