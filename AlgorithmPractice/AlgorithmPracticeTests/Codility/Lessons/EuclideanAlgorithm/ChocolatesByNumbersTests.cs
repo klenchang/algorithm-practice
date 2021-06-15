@@ -26,16 +26,5 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm.Tests
 
             Assert.AreEqual(actual, expected);
         }
-
-        [TestMethod()]
-        public void GCDTest()
-        {
-            var N = 16;
-            var M = 12;
-            var actual = ChocolatesByNumbers.GCD(N, M);
-            var expected = 4;
-
-            Assert.AreEqual(actual, expected);
-        }
     }
 }

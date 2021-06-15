@@ -48,23 +48,9 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm
         /// <returns></returns>
         public static int Solution(int N, int M)
         {
-            var gcd = GCD(Math.Max(N, M), Math.Min(N, M));
+            var gcd = Common.GCD(Math.Max(N, M), Math.Min(N, M));
             var lcm = (long)N * (long)M / gcd;
             return (int)(lcm / M);
-        }
-
-        /// <summary>
-        /// get gcd(N, M)
-        /// </summary>
-        /// <param name="N"></param>
-        /// <param name="M"></param>
-        /// <returns></returns>
-        public static int GCD(int N, int M)
-        {
-            if (N % M == 0)
-                return M;
-            else
-                return GCD(M, N % M);
         }
     }
 }
