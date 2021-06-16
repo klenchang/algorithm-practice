@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using AlgorithmPractice.Codility.Lessons.FibonacciNumbers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgorithmPractice.Codility.Lessons.FibonacciNumbers.Tests
 {
@@ -31,6 +32,16 @@ namespace AlgorithmPractice.Codility.Lessons.FibonacciNumbers.Tests
             var maxValue = 0;
             var actual = Common.GetFibonacciList(maxValue);
             var expected = new int[] { 0 };
+
+            CollectionAssert.AreEqual(actual, expected);
+        }
+
+        [TestMethod()]
+        public void GetFibonacciListBaseOnNTest()
+        {
+            var n = 5;
+            var actual = Common.GetFibonacciListBaseOnN(n);
+            var expected = new int[] { 0, 1, 1, 2, 3, 5 };
 
             CollectionAssert.AreEqual(actual, expected);
         }
