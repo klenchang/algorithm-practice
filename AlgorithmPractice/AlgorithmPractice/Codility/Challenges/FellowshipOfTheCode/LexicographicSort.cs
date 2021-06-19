@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace AlgorithmPractice.Codility.Challenges
+namespace AlgorithmPractice.Codility.Challenges.FellowshipOfTheCode
 {
     public class LexicographicSort
     {
