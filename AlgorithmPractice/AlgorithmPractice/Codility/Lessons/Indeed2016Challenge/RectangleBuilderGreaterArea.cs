@@ -118,7 +118,7 @@ namespace AlgorithmPractice.Codility.Lessons.Indeed2016Challenge
                 var r = X % current;
                 var min = q;
                 if (r != 0)
-                    min ++;
+                    min++;
                 for (int y = 0; y < big.Count; y++)
                 {
                     if (big[y] >= min)
@@ -130,6 +130,61 @@ namespace AlgorithmPractice.Codility.Lessons.Indeed2016Challenge
                 if (cnt > 1000000000) return -1;
             }
 
+            return (int)cnt;
+        }
+
+        /// <summary>
+        ///  time complexity: O(N * log(N))
+        ///  use binary search
+        /// </summary>
+        /// <param name="A"></param>
+        /// <param name="X"></param>
+        /// <returns></returns>
+        public static int Solution2(int[] A, int X)
+        {
+            Array.Sort(A);
+            var usableList = new List<int>();
+            var sqrt = Math.Sqrt(X);
+            var count = 0;
+            long cnt = 0;
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (A[i] >= sqrt)
+                {
+                    if (i == 0 || A[i] != A[i - 1])
+                        count = 1;
+                    else
+                    {
+                        count++;
+                        if (count == 4)
+                            cnt++;
+                    }
+                }
+
+                if (i < A.Length - 1)
+                {
+                    if (A[i] == A[i + 1] && (usableList.Count == 0 || usableList.Last() != A[i]))
+                        usableList.Add(A[i]);
+                }
+            }
+            if (usableList.Count == 0) return (int)cnt;
+
+            for (int i = 0; i < usableList.Count - 1; i++)
+            {
+                var start = i + 1;
+                var end = usableList.Count - 1;
+                while (start <= end)
+                {
+                    var mid = (start + end) / 2;
+                    if ((long)usableList[i] * (long)usableList[mid] >= (long)X)
+                        end = mid - 1;
+                    else
+                        start = mid + 1;
+                }
+                cnt += (usableList.Count - end - 1);
+                if (cnt > 1000000000) return -1;
+            }
             return (int)cnt;
         }
     }
