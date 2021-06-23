@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Nesting.Solution(s);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Nesting.Solution(s);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting.Tests
             var actual = MaxProductOfThree.Solution(array);
             var expected = 60;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting.Tests
             var actual = MaxProductOfThree.Solution(array);
             var expected = -10000;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -32,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting.Tests
             var actual = MaxProductOfThree.Solution(array);
             var expected = 500000;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -42,7 +42,7 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting.Tests
             var actual = MaxProductOfThree.Solution(array);
             var expected = 120;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

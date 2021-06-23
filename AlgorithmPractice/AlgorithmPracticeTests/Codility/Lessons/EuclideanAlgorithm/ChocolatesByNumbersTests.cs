@@ -13,7 +13,7 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm.Tests
             var actual = ChocolatesByNumbers.Solution(N, M);
             var expected = 5;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -24,7 +24,7 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm.Tests
             var actual = ChocolatesByNumbers.Solution(N, M);
             var expected = 947853;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

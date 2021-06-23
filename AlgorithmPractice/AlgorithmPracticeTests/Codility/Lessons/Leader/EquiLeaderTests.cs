@@ -1,5 +1,4 @@
-﻿using AlgorithmPractice.Codility.Lessons.Leader;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgorithmPractice.Codility.Lessons.Leader.Tests
 {
@@ -13,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.Leader.Tests
             var actual = EquiLeader.Solution(array);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -23,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.Leader.Tests
             var actual = EquiLeader.Solution(array);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -33,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.Leader.Tests
             var actual = EquiLeader.Solution(array);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -43,7 +42,7 @@ namespace AlgorithmPractice.Codility.Lessons.Leader.Tests
             var actual = EquiLeader.FindLeaderAndCount(array);
             var expected = "0,2";
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -53,7 +52,7 @@ namespace AlgorithmPractice.Codility.Lessons.Leader.Tests
             var actual = EquiLeader.FindLeaderAndCount(array);
             var expected = "-1";
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -63,7 +62,7 @@ namespace AlgorithmPractice.Codility.Lessons.Leader.Tests
             var actual = EquiLeader.FindLeaderAndCount(array);
             var expected = "0,1";
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

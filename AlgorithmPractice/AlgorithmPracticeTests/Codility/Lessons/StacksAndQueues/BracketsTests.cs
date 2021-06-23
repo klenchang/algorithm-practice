@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AlgorithmPractice.Codility.Lessons.StacksAndQueues;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
 {
@@ -16,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Brackets.Solution1(s);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -26,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Brackets.Solution1(s);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -36,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Brackets.Solution1(s);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -46,7 +42,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Brackets.Solution2(s);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -56,7 +52,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Brackets.Solution2(s);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -66,7 +62,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Brackets.Solution2(s);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

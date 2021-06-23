@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.SieveOfEratosthenes.Tests
             var actual = CountNonDivisible.Solution(array);
             var expected = new[] { 2, 4, 3, 2, 0 };
 
-            CollectionAssert.AreEqual(actual, expected);
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.SieveOfEratosthenes.Tests
             var actual = CountNonDivisible.Solution(array);
             var expected = new[] { 4, 3, 2, 1, 0 };
 
-            CollectionAssert.AreEqual(actual, expected);
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

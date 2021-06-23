@@ -1,4 +1,6 @@
-﻿namespace AlgorithmPractice.Codility.Lessons.SieveOfEratosthenes
+﻿using System;
+
+namespace AlgorithmPractice.Codility.Lessons.SieveOfEratosthenes
 {
     public class CountSemiprimes
     {
@@ -74,6 +76,64 @@
                         result[i]++;
 
             return result;
+        }
+
+        /// <summary>
+        /// time complexity: O(N * log(log(N)) + M), task score: 100%
+        /// </summary>
+        /// <param name="N"></param>
+        /// <param name="P"></param>
+        /// <param name="Q"></param>
+        /// <returns></returns>
+        public static int[] Solution2(int N, int[] P, int[] Q)
+        {
+            var sieve = Sieve(N);
+            var semiPrime = Semiprime(sieve);
+            var semiPrimePrefixSum = SemiPrimePrefixSum(semiPrime);
+
+            var res = new int[P.Length];
+            for (int i = 0; i < P.Length; i++)
+                res[i] = semiPrimePrefixSum[Q[i]] - semiPrimePrefixSum[P[i] - 1];
+
+            return res;
+        }
+        public static int[] Sieve(int N)
+        {
+            var sieve = new int[N + 1];
+            for (int i = 2; i <= (int)Math.Sqrt(N); i++)
+            {
+                if (sieve[i] == 0)
+                {
+                    var k = i * i;
+                    while (k <= N)
+                    {
+                        if (sieve[k] == 0)
+                            sieve[k] = i;
+                        k += i;
+                    }
+                }
+            }
+            return sieve;
+        }
+        public static int[] Semiprime(int[] sieve)
+        {
+            var semiPrime = new int[sieve.Length];
+            for (int i = 0; i < sieve.Length; i++)
+            {
+                if (sieve[i] == 0) continue;
+                int firstFactor = sieve[i];
+                if (sieve[i / firstFactor] == 0) semiPrime[i] = 1;
+            }
+            return semiPrime;
+        }
+        public static int[] SemiPrimePrefixSum(int[] semiPrime)
+        {
+            var prefix = new int[semiPrime.Length];
+            for (int i = 1; i < prefix.Length; i++)
+            {
+                prefix[i] = prefix[i - 1] + semiPrime[i];
+            }
+            return prefix;
         }
     }
 }

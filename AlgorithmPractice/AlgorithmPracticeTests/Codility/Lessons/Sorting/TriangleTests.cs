@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AlgorithmPractice.Codility.Lessons.Sorting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AlgorithmPractice.Codility.Lessons.Sorting.Tests
 {
@@ -16,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting.Tests
             var actual = Triangle.Solution(array);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -26,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting.Tests
             var actual = Triangle.Solution(array);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -36,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting.Tests
             var actual = Triangle.Solution(array);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

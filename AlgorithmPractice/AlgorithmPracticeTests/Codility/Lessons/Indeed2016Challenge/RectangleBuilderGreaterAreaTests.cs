@@ -1,5 +1,4 @@
-﻿using AlgorithmPractice.Codility.Lessons.Indeed2016Challenge;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgorithmPractice.Codility.Lessons.Indeed2016Challenge.Tests
 {

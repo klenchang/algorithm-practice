@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution(A);
             var expected = 4;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution(A);
             var expected = 7;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -32,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution(A);
             var expected = 10;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -42,7 +42,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution2(A);
             var expected = 4;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -52,7 +52,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution2(A);
             var expected = 7;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -62,7 +62,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution2(A);
             var expected = 10;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -72,7 +72,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution3(A);
             var expected = 4;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -82,7 +82,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution3(A);
             var expected = 7;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -92,7 +92,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountTriangles.Solution3(A);
             var expected = 10;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

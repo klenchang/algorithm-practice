@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AlgorithmPractice.Codility.Lessons.StacksAndQueues;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
 {
@@ -17,7 +13,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Fish.Solution(arrayA, arrayB);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -28,7 +24,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = Fish.Solution(arrayA, arrayB);
             var expected = 3;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

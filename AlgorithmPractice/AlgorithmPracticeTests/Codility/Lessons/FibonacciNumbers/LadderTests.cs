@@ -13,7 +13,7 @@ namespace AlgorithmPractice.Codility.Lessons.FibonacciNumbers.Tests
             var actual = Ladder.Solution(arrayA, arrayB);
             var expected = new[] { 5, 1, 8, 0, 1 };
 
-            CollectionAssert.AreEqual(actual, expected);
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

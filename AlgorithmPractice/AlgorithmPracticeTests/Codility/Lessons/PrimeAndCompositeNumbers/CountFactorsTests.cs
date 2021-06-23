@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
             var actual = CountFactors.Solution(N);
             var expected = 8;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
             var actual = CountFactors.Solution(N);
             var expected = 5;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -32,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
             var actual = CountFactors.Solution(N);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

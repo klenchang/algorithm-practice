@@ -1,5 +1,4 @@
-﻿using AlgorithmPractice.Codility.Lessons.FibonacciNumbers;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgorithmPractice.Codility.Lessons.FibonacciNumbers.Tests
 {
@@ -13,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.FibonacciNumbers.Tests
             var actual = Common.GetFibonacciList(maxValue);
             var expected = new int[] { 0, 1, 1, 2, 3, 5, 8, 13 };
 
-            CollectionAssert.AreEqual(actual, expected);
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -23,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.FibonacciNumbers.Tests
             var actual = Common.GetFibonacciList(maxValue);
             var expected = new int[] { 0, 1, 1 };
 
-            CollectionAssert.AreEqual(actual, expected);
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -33,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.FibonacciNumbers.Tests
             var actual = Common.GetFibonacciList(maxValue);
             var expected = new int[] { 0 };
 
-            CollectionAssert.AreEqual(actual, expected);
+            CollectionAssert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -43,7 +42,7 @@ namespace AlgorithmPractice.Codility.Lessons.FibonacciNumbers.Tests
             var actual = Common.GetFibonacciListBaseOnN(n);
             var expected = new int[] { 0, 1, 1, 2, 3, 5 };
 
-            CollectionAssert.AreEqual(actual, expected);
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

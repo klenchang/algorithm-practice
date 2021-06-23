@@ -13,7 +13,7 @@ namespace AlgorithmPractice.Codility.Lessons.GreedyAlgorithms.Tests
             var actual = TieRopes.Solution(K, A);
             var expected = 3;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -24,7 +24,7 @@ namespace AlgorithmPractice.Codility.Lessons.GreedyAlgorithms.Tests
             var actual = TieRopes.Solution(K, A);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

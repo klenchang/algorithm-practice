@@ -14,7 +14,7 @@ namespace AlgorithmPractice.Codility.Lessons.BinarySearchAlgorithm.Tests
             var actual = MinMaxDivision.Solution(K, M, array);
             var expected = 6;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

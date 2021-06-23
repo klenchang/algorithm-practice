@@ -52,5 +52,25 @@ namespace AlgorithmPractice.Codility.Lessons.CountingElements
             }
             return result != 0 ? result : array[array.Length - 1] + 1;
         }
+
+        /// <summary>
+        ///  time complexity: O(N) or O(N * log(N))
+        /// </summary>
+        /// <param name="A"></param>
+        /// <returns></returns>
+        public static int Solution2(int[] A)
+        {
+            var temp = new bool[1000000];
+            for (int i = 0; i < A.Length; i++)
+                if (A[i] > 0 && !temp[A[i] - 1])
+                    temp[A[i] - 1] = true;
+
+            for (int i = 0; i < temp.Length; i++)
+            {
+                if (!temp[i])
+                    return i + 1;
+            }
+            return A.Length + 1;
+        }
     }
 }

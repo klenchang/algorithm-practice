@@ -3,14 +3,16 @@
 namespace AlgorithmPractice.Codility.Lessons.PrefixSums.Tests
 {
     [TestClass()]
-    public class MinAvgTwoSliceTests
+    public class MushroomPickerTests
     {
         [TestMethod()]
         public void SolutionTest()
         {
-            var array = new[] { -3, -5, -8, -4, -10 };
-            var actual = MinAvgTwoSlice.Solution(array);
-            var expected = 2;
+            var A = new int[] { 2, 3, 7, 5, 1, 3, 9 };
+            var K = 4;
+            var M = 6;
+            var actual = MushroomPicker.Solution(A, K, M);
+            var expected = 25;
 
             Assert.AreEqual(expected, actual);
         }

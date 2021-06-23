@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.DynamicProgramming.Tests
             var actual = NumberSolitaire.Solution(A);
             var expected = 8;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.DynamicProgramming.Tests
             var actual = NumberSolitaire.Solution(A);
             var expected = -13;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

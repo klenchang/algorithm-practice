@@ -14,7 +14,7 @@ namespace AlgorithmPractice.Codility.Lessons.BinarySearchAlgorithm.Tests
             var actual = NailingPlanks.Solution(A, B, C);
             var expected = 4;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

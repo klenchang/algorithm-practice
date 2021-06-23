@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AlgorithmPractice.Codility.Lessons.PrefixSums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AlgorithmPractice.Codility.Lessons.PrefixSums.Tests
 {
@@ -16,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrefixSums.Tests
             var actual = PassingCars.Solution1(array);
             var expected = 5;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -26,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrefixSums.Tests
             var actual = PassingCars.Solution2(array);
             var expected = 5;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -36,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrefixSums.Tests
             var actual = PassingCars.Solution3(array);
             var expected = 5;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

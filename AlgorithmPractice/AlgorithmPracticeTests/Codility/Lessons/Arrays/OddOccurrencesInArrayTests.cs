@@ -1,15 +1,15 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AlgorithmPractice.Codility.Lessons.Indeed2015Challenge.Tests
+namespace AlgorithmPractice.Codility.Lessons.Arrays.Tests
 {
     [TestClass()]
-    public class LongestPasswordTests
+    public class OddOccurrencesInArrayTests
     {
         [TestMethod()]
         public void SolutionTest()
         {
-            var S = "test 5 a0A pass007 ?xy1";
-            var actual = LongestPassword.Solution(S);
+            var A = new[] { 9, 3, 9, 3, 9, 7, 9 };
+            var actual = OddOccurrencesInArray.Solution(A);
             var expected = 7;
 
             Assert.AreEqual(expected, actual);

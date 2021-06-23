@@ -16,7 +16,7 @@ namespace AlgorithmPractice.Codility.Lessons.MaximumSliceProblem.Tests
             var actual = MaxProfit.Solution(array);
             var expected = 356;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

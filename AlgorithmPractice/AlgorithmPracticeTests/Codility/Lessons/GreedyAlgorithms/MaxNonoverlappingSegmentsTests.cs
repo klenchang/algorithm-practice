@@ -13,7 +13,7 @@ namespace AlgorithmPractice.Codility.Lessons.GreedyAlgorithms.Tests
             var actual = MaxNonoverlappingSegments.Solution(A, B);
             var expected = 3;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

@@ -82,5 +82,27 @@ namespace AlgorithmPractice.Codility.Lessons.CountingElements
             }
             return -1;
         }
+
+        /// <summary>
+        /// time complexity: O(N)
+        /// use HashSet, if value already exist in set, it will not be add again. 
+        /// </summary>
+        /// <param name="X"></param>
+        /// <param name="A"></param>
+        /// <returns></returns>
+        public static int Solution2(int X, int[] A)
+        {
+            var fallen = new HashSet<int>();
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (A[i] <= X)
+                    fallen.Add(A[i]);
+
+                if (fallen.Count == X)
+                    return i;
+            }
+
+            return -1;
+        }
     }
 }

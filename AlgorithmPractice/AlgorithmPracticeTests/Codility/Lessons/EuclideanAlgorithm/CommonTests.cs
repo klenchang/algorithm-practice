@@ -13,7 +13,7 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm.Tests
             var actual = Common.GCD(N, M);
             var expected = 4;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

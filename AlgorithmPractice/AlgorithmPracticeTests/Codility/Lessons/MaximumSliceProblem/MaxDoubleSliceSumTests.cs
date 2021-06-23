@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.MaximumSliceProblem.Tests
             var actual = MaxDoubleSliceSum.Solution(array);
             var expected = 17;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.MaximumSliceProblem.Tests
             var actual = MaxDoubleSliceSum.Solution(array);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -32,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.MaximumSliceProblem.Tests
             var actual = MaxDoubleSliceSum.Solution(array);
             var expected = 16;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

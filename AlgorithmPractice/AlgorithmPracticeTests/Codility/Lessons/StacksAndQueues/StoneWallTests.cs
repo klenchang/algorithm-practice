@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.StacksAndQueues.Tests
             var actual = StoneWall.Solution(array);
             var expected = 7;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

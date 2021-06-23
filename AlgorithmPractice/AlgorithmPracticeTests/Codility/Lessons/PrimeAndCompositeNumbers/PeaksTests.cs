@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
             var actual = Peaks.Solution(array);
             var expected = 3;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
             var actual = Peaks.Solution(array);
             var expected = 4;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

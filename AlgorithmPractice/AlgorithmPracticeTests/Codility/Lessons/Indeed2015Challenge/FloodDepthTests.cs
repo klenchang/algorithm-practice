@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.Indeed2015Challenge.Tests
             var actual = FloodDepth.Solution(A);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.Indeed2015Challenge.Tests
             var actual = FloodDepth.Solution(A);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -32,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.Indeed2015Challenge.Tests
             var actual = FloodDepth.Solution(A);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

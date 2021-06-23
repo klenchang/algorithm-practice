@@ -13,7 +13,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountDistinctSlices.Solution(M, A);
             var expected = 9;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -24,7 +24,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountDistinctSlices.Solution(M, A);
             var expected = 8;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -35,7 +35,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountDistinctSlices.Solution(M, A);
             var expected = 10;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -47,7 +47,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = CountDistinctSlices.Solution(M, A);
             var expected = 15;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AlgorithmPractice.Codility.Lessons.Sorting
 {
@@ -46,6 +47,19 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting
                     distinctCount++;
 
             return distinctCount;
+        }
+
+        public static int Solution2(int[] A)
+        {
+            HashSet<int> set = new HashSet<int>();
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (!set.Contains(A[i]))
+                {
+                    set.Add(A[i]);
+                }
+            }
+            return set.Count;
         }
     }
 }

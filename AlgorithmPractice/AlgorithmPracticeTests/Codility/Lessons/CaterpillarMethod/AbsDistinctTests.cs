@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution(array);
             var expected = 5;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution(array);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -32,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution(array);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -42,7 +42,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution(array);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -52,7 +52,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution2(array);
             var expected = 5;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -62,7 +62,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution2(array);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -72,7 +72,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution2(array);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -82,7 +82,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution2(array);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -92,7 +92,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution2(array);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -102,7 +102,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution2(array);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -112,7 +112,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = AbsDistinct.Solution2(array);
             var expected = 3;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

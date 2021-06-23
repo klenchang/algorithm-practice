@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = MinAbsSumOfTwo.Solution(A);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = MinAbsSumOfTwo.Solution(A);
             var expected = 3;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -32,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = MinAbsSumOfTwo.Solution(A);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -42,7 +42,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = MinAbsSumOfTwo.Solution(A);
             var expected = 2000000000;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -52,7 +52,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = MinAbsSumOfTwo.Solution(A);
             var expected = 1999999996;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -62,7 +62,7 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod.Tests
             var actual = MinAbsSumOfTwo.Solution(A);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

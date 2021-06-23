@@ -14,7 +14,7 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm.Tests
             var actual = CommonPrimeDivisors.Solution(A, B);
             var expected = 1;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]

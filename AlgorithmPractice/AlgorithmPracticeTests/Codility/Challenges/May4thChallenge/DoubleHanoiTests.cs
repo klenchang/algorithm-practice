@@ -14,7 +14,7 @@ namespace AlgorithmPractice.Codility.Challenges.May4thChallenge.Tests
             var actual = DoubleHanoi.Solution(A, L, R);
             var expected = 3;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -26,7 +26,7 @@ namespace AlgorithmPractice.Codility.Challenges.May4thChallenge.Tests
             var actual = DoubleHanoi.Solution(A, L, R);
             var expected = 4;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -38,19 +38,19 @@ namespace AlgorithmPractice.Codility.Challenges.May4thChallenge.Tests
             var actual = DoubleHanoi.Solution(A, L, R);
             var expected = 4;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
         public void SolutionTest3()
         {
-            var A = new[] { 1,5,5 };
+            var A = new[] { 1, 5, 5 };
             var L = 2;
             var R = 4;
             var actual = DoubleHanoi.Solution(A, L, R);
             var expected = 2;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -62,7 +62,7 @@ namespace AlgorithmPractice.Codility.Challenges.May4thChallenge.Tests
             var actual = DoubleHanoi.Solution(A, L, R);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

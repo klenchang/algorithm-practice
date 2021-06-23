@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.DynamicProgramming.Tests
             var actual = MinAbsSum.Solution(A);
             var expected = 0;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
             var actual = MinPerimeterRectangle.Solution(N);
             var expected = 22;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
             var actual = MinPerimeterRectangle.Solution(N);
             var expected = 32;
 
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
