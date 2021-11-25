@@ -51,15 +51,11 @@ namespace AlgorithmPractice.Codility.Lessons.Sorting
 
         public static int Solution2(int[] A)
         {
-            HashSet<int> set = new HashSet<int>();
-            for (int i = 0; i < A.Length; i++)
-            {
-                if (!set.Contains(A[i]))
-                {
-                    set.Add(A[i]);
-                }
-            }
-            return set.Count;
+            HashSet<int> hs = new HashSet<int>();
+            foreach (var a in A)
+                hs.Add(a);
+
+            return hs.Count;
         }
     }
 }

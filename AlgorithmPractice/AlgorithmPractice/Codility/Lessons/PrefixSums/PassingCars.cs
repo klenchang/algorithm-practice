@@ -121,5 +121,25 @@ namespace AlgorithmPractice.Codility.Lessons.PrefixSums
 
             return total > 1000000000 ? -1 : (int)total;
         }
+
+        /// <summary>
+        /// time complexity: O(N)
+        /// </summary>
+        /// <param name="A"></param>
+        /// <returns></returns>
+        public static int Solution4(int[] A)
+        {
+            var preSum = new long[A.Length + 1];
+            long countZero = 0;
+            for (int i = 0; i < A.Length; i++)
+            {
+                preSum[i + 1] = preSum[i];
+                if (A[i] == 0)
+                    countZero++;
+                else
+                    preSum[i + 1] += countZero;
+            }
+            return preSum[preSum.Length - 1] > 1000000000 ? -1 : (int)preSum[preSum.Length - 1];
+        }
     }
 }

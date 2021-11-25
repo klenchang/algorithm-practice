@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace AlgorithmPractice.Codility.Lessons.Arrays
@@ -58,6 +59,30 @@ namespace AlgorithmPractice.Codility.Lessons.Arrays
                     dict[n]++;
             }
             return dict.FirstOrDefault(kv => (kv.Value % 2) == 1).Key;
+        }
+
+        /// <summary>
+        /// time complexity: O(N) or O(N * log(N))
+        /// </summary>
+        /// <param name="A"></param>
+        /// <returns></returns>
+        public static int Solution2(int[] A)
+        {
+            Array.Sort(A);
+            var queue = new Queue<int>();
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (queue.Count == 0)
+                    queue.Enqueue(A[i]);
+                else
+                {
+                    if (queue.Peek() != A[i])
+                        break;
+                    else
+                        queue.Dequeue();
+                }
+            }
+            return queue.Peek();
         }
     }
 }

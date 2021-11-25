@@ -74,7 +74,22 @@ namespace AlgorithmPractice.Codility.Lessons.MaximumSliceProblem
                     maxProfit = currentProfit;
             }
 
-            return maxProfit; 
+            return maxProfit;
+        }
+
+        public int Solution2(int[] A)
+        {
+            if (A.Length < 2) return 0;
+            var min = A[0];
+            var maxProfit = 0;
+            for (int i = 1; i < A.Length; i++)
+            {
+                if (A[i] - min < 0)
+                    min = A[i];
+                else if (A[i] - min > maxProfit)
+                    maxProfit = A[i] - min;
+            }
+            return maxProfit;
         }
     }
 }

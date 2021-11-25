@@ -21,7 +21,8 @@
         from 0 to N − 1 on the river. Array A contains only 0s and/or 1s:
             0 represents a position without a leaf;
             1 represents a position containing a leaf.
-        The goal is to count the minimum number of jumps in which the frog can get to the other side of the river (from position −1 to position N). The frog can jump between positions −1 and N (the banks of the river) and every position containing a leaf.
+        The goal is to count the minimum number of jumps in which the frog can get to the other side of the river (from position −1 to position N). 
+        The frog can jump between positions −1 and N (the banks of the river) and every position containing a leaf.
 
         For example, consider array A such that:
             A[0] = 0
@@ -92,7 +93,7 @@
                         else if (A[start] >= 1)
                         {
                             // don't update steps as this line, performance is too slow
-                            //steps = (steps == 0 ? A[start] : Math.Min(steps, A[start])) + 1;
+                            // steps = (steps == 0 ? A[start] : Math.Min(steps, A[start])) + 1;
                             if (steps == 0 || A[start] + 1 < steps)
                                 steps = A[start] + 1;
                         }
