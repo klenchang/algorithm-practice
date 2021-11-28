@@ -6,7 +6,16 @@ namespace AlgorithmPractice.Hackerrank.Practice.DataStructures.Tree
     {
         /*
          s="1001011"
-         node = 
+         Tree is 
+              5
+            0/ \1
+            2  A,3
+          0/ \1
+         B,1 C,1
+
+         result = ABACA
+         Explain: s = 1 + 00 + 1 + 01 + 1
+                    = A + B  + A + C  + A
          */
 
         public class DecodingNode
