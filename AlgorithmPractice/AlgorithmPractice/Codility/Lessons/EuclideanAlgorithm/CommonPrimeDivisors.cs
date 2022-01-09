@@ -55,13 +55,13 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm
             var count = 0;
             for (int i = 0; i < A.Length; i++)
             {
-                if (CheckPrimesASameWithB(A[i], B[i]))
+                if (CheckPrimesOfASameWithB(A[i], B[i]))
                     count++;
             }
             return count;
         }
 
-        public static bool CheckPrimesASameWithB(int n, int m)
+        public static bool CheckPrimesOfASameWithB(int n, int m)
         {
             var gcd = Common.GCD(Math.Max(n, m), Math.Min(n, m));
             // check N's all primes are same with gcd's primes

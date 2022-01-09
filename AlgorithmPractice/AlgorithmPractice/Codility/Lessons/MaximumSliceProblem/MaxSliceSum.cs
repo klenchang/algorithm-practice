@@ -49,5 +49,21 @@ namespace AlgorithmPractice.Codility.Lessons.MaximumSliceProblem
 
             return (int)max.Max();
         }
+
+        public static int SolutionWithLessSpace(int[] A)
+        {
+            var max = A[0];
+            var temp = A[0];
+            for (int i = 1; i < A.Length; i++)
+            {
+                temp += A[i];
+                if (temp < A[i])
+                    temp = A[i];
+
+                if (max < temp)
+                    max = temp;
+            }
+            return max;
+        }
     }
 }

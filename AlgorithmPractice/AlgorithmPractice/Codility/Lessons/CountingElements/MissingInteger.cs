@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace AlgorithmPractice.Codility.Lessons.CountingElements
@@ -71,6 +72,20 @@ namespace AlgorithmPractice.Codility.Lessons.CountingElements
                     return i + 1;
             }
             return A.Length + 1;
+        }
+
+        public static int Solution3(int[] A)
+        {
+            var hs = new HashSet<int>();
+            foreach (var n in A)
+                if (n > 0)
+                    hs.Add(n);
+
+            for (int i = 1; i <= 100000; i++)
+                if (!hs.Contains(i))
+                    return i;
+
+            return 100001;
         }
     }
 }

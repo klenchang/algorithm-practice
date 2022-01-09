@@ -84,5 +84,14 @@ namespace AlgorithmPractice.Codility.Lessons.Arrays
             }
             return queue.Peek();
         }
+
+        public static int FindUniqueElementInArrayWithXOR(int[] array)
+        {
+            var result = 0;
+            foreach (var n in array)
+                result ^= n;
+
+            return result;
+        }
     }
 }

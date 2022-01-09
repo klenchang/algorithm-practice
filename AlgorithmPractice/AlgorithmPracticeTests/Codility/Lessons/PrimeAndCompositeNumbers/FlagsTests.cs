@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
 {
@@ -39,6 +40,16 @@ namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers.Tests
         public void SolutionTest_4()
         {
             var array = new[] { 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1 };
+            var actual = Flags.Solution(array);
+            var expected = 4;
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void SolutionTest_5()
+        {
+            var array = new[] { 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0 };
             var actual = Flags.Solution(array);
             var expected = 4;
 

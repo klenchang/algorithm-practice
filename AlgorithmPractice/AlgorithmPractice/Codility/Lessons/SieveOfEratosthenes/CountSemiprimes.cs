@@ -120,9 +120,11 @@ namespace AlgorithmPractice.Codility.Lessons.SieveOfEratosthenes
             var semiPrime = new int[sieve.Length];
             for (int i = 0; i < sieve.Length; i++)
             {
-                if (sieve[i] == 0) continue;
+                if (sieve[i] == 0) continue;    // number is prime
                 int firstFactor = sieve[i];
-                if (sieve[i / firstFactor] == 0) semiPrime[i] = 1;
+                int secondFactor = i / firstFactor;
+                if (sieve[secondFactor] == 0)   // if second factor is also prime 
+                    semiPrime[i] = 1;
             }
             return semiPrime;
         }

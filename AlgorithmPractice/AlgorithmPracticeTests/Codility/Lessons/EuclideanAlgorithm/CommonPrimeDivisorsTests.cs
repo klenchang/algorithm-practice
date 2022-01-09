@@ -22,7 +22,7 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm.Tests
         {
             var n = 15;
             var m = 75;
-            var actual = CommonPrimeDivisors.CheckPrimesASameWithB(n, m);
+            var actual = CommonPrimeDivisors.CheckPrimesOfASameWithB(n, m);
 
             Assert.IsTrue(actual);
         }
@@ -32,7 +32,7 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm.Tests
         {
             var n = 30;
             var m = 10;
-            var actual = CommonPrimeDivisors.CheckPrimesASameWithB(n, m);
+            var actual = CommonPrimeDivisors.CheckPrimesOfASameWithB(n, m);
 
             Assert.IsFalse(actual);
         }

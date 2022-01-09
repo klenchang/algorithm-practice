@@ -98,5 +98,38 @@ namespace AlgorithmPractice.Codility.Lessons.Leader
 
             return count > A.Length / 2 ? A[index] + "," + count : "-1";
         }
+
+        public static int SolutionWithDictionary(int[] A)
+        {
+            var dict = new Dictionary<int, int>();
+            var leaderCount = 0;
+            var leader = int.MinValue;
+            foreach (var n in A)
+            {
+                if (dict.ContainsKey(n))
+                    dict[n]++;
+                else
+                    dict.Add(n, 1);
+                if (leaderCount < dict[n])
+                {
+                    leader = n;
+                    leaderCount = dict[n];
+                }
+            }
+            if (leaderCount <= A.Length / 2)
+                return 0;
+            var leftLeaderCount = 0;
+            var res = 0;
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (A[i] == leader)
+                    leftLeaderCount++;
+                var rightLeaderCount = leaderCount - leftLeaderCount;
+                if ((leftLeaderCount > (i + 1) / 2) &&
+                   (rightLeaderCount > (A.Length - i - 1) / 2))
+                    res++;
+            }
+            return res;
+        }
     }
 }

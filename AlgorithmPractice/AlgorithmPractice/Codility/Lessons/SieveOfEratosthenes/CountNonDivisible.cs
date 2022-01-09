@@ -89,5 +89,49 @@ namespace AlgorithmPractice.Codility.Lessons.SieveOfEratosthenes
 
             return result;
         }
+
+        public class SolutionWithHashHistory
+        {
+            public int[] Solution(int[] A)
+            {
+                if (A.Length == 1)
+                    return new[] { 0 };
+                var data = GetNumbersOfElement(A);
+                var totalCount = A.Length;
+                var res = new int[A.Length];
+                var history = new Dictionary<int, int>();
+                for (int i = 0; i < res.Length; i++)
+                    res[i] = totalCount - FindFactorCount(A[i], data, history);
+
+                return res;
+            }
+            private int[] GetNumbersOfElement(int[] A)
+            {
+                var res = new int[A.Length * 2];
+                foreach (var n in A)
+                    res[n - 1]++;
+                return res;
+            }
+            private int FindFactorCount(int n, int[] data, Dictionary<int, int> history)
+            {
+                if (history.ContainsKey(n))
+                    return history[n];
+
+                var sqrt = (int)Math.Sqrt(n);
+                var count = 0;
+                for (int i = sqrt; i >= 1; i--)
+                {
+                    if (n % i == 0)
+                    {
+                        var q = n / i;
+                        count += data[i - 1];
+                        if (i != q)
+                            count += data[q - 1];
+                    }
+                }
+                history.Add(n, count);
+                return count;
+            }
+        }
     }
 }

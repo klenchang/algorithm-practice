@@ -49,8 +49,9 @@ namespace AlgorithmPractice.Codility.Lessons.EuclideanAlgorithm
         public static int Solution(int N, int M)
         {
             var gcd = Common.GCD(Math.Max(N, M), Math.Min(N, M));
-            var lcm = (long)N * (long)M / gcd;
-            return (int)(lcm / M);
+            // N * M = lcm * gcd
+            // result = lcm / M = N / gcd
+            return N / gcd;
         }
     }
 }

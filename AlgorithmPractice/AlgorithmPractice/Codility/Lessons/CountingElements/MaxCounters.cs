@@ -112,5 +112,33 @@ namespace AlgorithmPractice.Codility.Lessons.CountingElements
 
             return result;
         }
+
+        public static int[] Solution3(int N, int[] A)
+        {
+            var baseN = 0;
+            var res = new int[N];
+            var tempMax = 0;
+            foreach (var counter in A)
+            {
+                // sync all counter to max number
+                if (counter == N + 1)
+                    baseN = tempMax;
+                else
+                {
+                    // plus 1 
+                    res[counter - 1] = (res[counter - 1] > baseN ? res[counter - 1] : baseN) + 1;
+                    // keep max number
+                    if (tempMax < res[counter - 1])
+                        tempMax = res[counter - 1];
+                }
+            }
+            // set up default value as baseN for all counters
+            for (int i = 0; i < res.Length; i++)
+            {
+                if (res[i] < baseN)
+                    res[i] = baseN;
+            }
+            return res;
+        }
     }
 }

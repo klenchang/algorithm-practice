@@ -141,5 +141,28 @@ namespace AlgorithmPractice.Codility.Lessons.PrefixSums
             }
             return preSum[preSum.Length - 1] > 1000000000 ? -1 : (int)preSum[preSum.Length - 1];
         }
+
+        /// <summary>
+        /// use less space than solution 4
+        /// </summary>
+        /// <param name="A"></param>
+        /// <returns></returns>
+        public static int Solution5(int[] A)
+        {
+            long res = 0;
+            int ease = 0;
+            foreach (var n in A)
+            {
+                if (n == 0)
+                    ease++;
+                else
+                {
+                    res += ease;
+                    if (res > 1000000000)
+                        return -1;
+                }
+            }
+            return (int)res;
+        }
     }
 }

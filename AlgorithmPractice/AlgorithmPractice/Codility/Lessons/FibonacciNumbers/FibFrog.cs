@@ -77,36 +77,46 @@
         /// <returns></returns>
         public static int Solution(int[] A)
         {
+            if (A.Length == 0)
+                return 1;
+
             var fx = Common.GetFibonacciList(A.Length + 1);
             int result = -1;
             for (int i = 0; i <= A.Length; i++)
             {
                 if (i == A.Length || A[i] == 1) // destination is A.Length
                 {
-                    var steps = 0;
-                    for (int j = 2; j < fx.Length && fx[j] <= i + 1; j++)
-                    {
-                        // check whether can jump from this point and caculate steps
-                        var start = i - fx[j];
-                        if (start == -1) // from starting point
-                            steps = 1;
-                        else if (A[start] >= 1)
-                        {
-                            // don't update steps as this line, performance is too slow
-                            // steps = (steps == 0 ? A[start] : Math.Min(steps, A[start])) + 1;
-                            if (steps == 0 || A[start] + 1 < steps)
-                                steps = A[start] + 1;
-                        }
-                    }
+                    var minStep = GetMinStep(i, A, fx);
                     // update steps
-                    if (i != A.Length) // update every point
-                        A[i] = steps;
-                    else if (steps > 0) // update end point
-                        result = steps;
+                    if (i != A.Length) // if not endpoint, update min step
+                        A[i] = minStep;
+                    else
+                        result = minStep; // endpoint
                 }
             }
 
             return result;
+        }
+        private static int GetMinStep(int position, int[] A, int[] fn)
+        {
+            var step = -1;
+            for (int fs = 2; fs < fn.Length; fs++)
+            {
+                // check whether can jump from this point and caculate steps
+                var start = position - fn[fs];
+                if (start == -1)    // from starting point
+                    step = 1;
+                if (start < 0)
+                    break;
+                if (A[start] > 0)
+                {
+                    // don't update steps as this line, performance is too slow
+                    // steps = (steps < 0 ? A[start] : Math.Min(steps, A[start])) + 1;
+                    if (step < 0 || A[start] + 1 < step)
+                        step = A[start] + 1;
+                }
+            }
+            return step;
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers
+﻿using System;
+
+namespace AlgorithmPractice.Codility.Lessons.PrimeAndCompositeNumbers
 {
     public class CountFactors
     {
@@ -47,6 +49,17 @@
                 factorNum++;
 
             return factorNum;
+        }
+
+        public static int SolutionWithSqrt(int N)
+        {
+            var sqrt = (int)Math.Sqrt(N);
+            var res = 0;
+            for (int i = 1; i <= sqrt; i++)
+                if (N % i == 0)
+                    res += (i * i == N ? 1 : 2);
+
+            return res;
         }
     }
 }

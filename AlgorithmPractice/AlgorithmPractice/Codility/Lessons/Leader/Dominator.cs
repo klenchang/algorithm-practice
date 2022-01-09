@@ -53,7 +53,7 @@ namespace AlgorithmPractice.Codility.Lessons.Leader
             for (int i = 0; i < A.Length; i++)
             {
                 if (stack.Count == 0 || stack.Peek() == A[i])
-                { 
+                {
                     stack.Push(A[i]);
                     index = i;
                 }
@@ -64,10 +64,34 @@ namespace AlgorithmPractice.Codility.Lessons.Leader
             var candidate = stack.Peek();
             var count = 0;
             foreach (var n in A)
-                if (candidate == n) count ++;
+                if (candidate == n) count++;
 
             return count > A.Length / 2 ? index : -1;
         }
 
-    }
-}
+        public class Item
+        {
+            public int Count { get; set; }
+            public int FirstIndex { get; set; }
+        }
+        public int SolutionWithDictionary(int[] A)
+        {
+            var dict = new Dictionary<int, Item>();
+            var max = -1;
+            var maxNumber = int.MinValue;
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (dict.ContainsKey(A[i]))
+                    dict[A[i]].Count++;
+                else
+                    dict.Add(A[i], new Item { Count = 1, FirstIndex = i });
+
+                if (max < dict[A[i]].Count)
+                {
+                    max = dict[A[i]].Count;
+                    maxNumber = A[i];
+                }
+            }
+            return dict.Count != 0 && dict[maxNumber].Count > A.Length / 2 ? dict[maxNumber].FirstIndex : -1;
+        }
+    }}

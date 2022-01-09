@@ -133,5 +133,19 @@ namespace AlgorithmPractice.Codility.Lessons.CaterpillarMethod
 
             return result;
         }
+
+        public static int SolutionWithHashSet(int[] A)
+        {
+            var hs = new HashSet<int>();
+            var hasMinValue = false;
+            foreach (var n in A)
+            {
+                if (n != int.MinValue)
+                    hs.Add(Math.Abs(n));
+                else
+                    hasMinValue = true;
+            }
+            return hs.Count + (hasMinValue ? 1 : 0);
+        }
     }
 }
