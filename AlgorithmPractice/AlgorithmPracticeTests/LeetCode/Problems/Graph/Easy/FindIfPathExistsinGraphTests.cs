@@ -17,7 +17,7 @@ namespace AlgorithmPractice.LeetCode.Problems.Graph.Easy.Tests
             var n = 3;
             var start = 0;
             var end = 2;
-            var actual = FindIfPathExistsinGraph.SolutionWithDFSRecursive.ValidPath(n, edges, start, end);
+            var actual = FindIfPathExistsinGraph_1971.SolutionWithDFSRecursive.ValidPath(n, edges, start, end);
 
             Assert.IsTrue(actual);
         }
@@ -36,7 +36,7 @@ namespace AlgorithmPractice.LeetCode.Problems.Graph.Easy.Tests
             var n = 6;
             var start = 0;
             var end = 5;
-            var actual = FindIfPathExistsinGraph.SolutionWithDFSRecursive.ValidPath(n, edges, start, end);
+            var actual = FindIfPathExistsinGraph_1971.SolutionWithDFSRecursive.ValidPath(n, edges, start, end);
 
             Assert.IsFalse(actual);
         }
@@ -53,7 +53,7 @@ namespace AlgorithmPractice.LeetCode.Problems.Graph.Easy.Tests
             var n = 3;
             var start = 0;
             var end = 2;
-            var actual = FindIfPathExistsinGraph.SolutionWithHashMap.ValidPath(n, edges, start, end);
+            var actual = FindIfPathExistsinGraph_1971.SolutionWithHashMap.ValidPath(n, edges, start, end);
 
             Assert.IsTrue(actual);
         }
@@ -72,7 +72,7 @@ namespace AlgorithmPractice.LeetCode.Problems.Graph.Easy.Tests
             var n = 6;
             var start = 0;
             var end = 5;
-            var actual = FindIfPathExistsinGraph.SolutionWithHashMap.ValidPath(n, edges, start, end);
+            var actual = FindIfPathExistsinGraph_1971.SolutionWithHashMap.ValidPath(n, edges, start, end);
 
             Assert.IsFalse(actual);
         }

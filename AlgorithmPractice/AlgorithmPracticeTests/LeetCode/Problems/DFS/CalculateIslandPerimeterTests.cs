@@ -15,7 +15,7 @@ namespace AlgorithmPractice.LeetCode.Problems.DFS.Tests
                 new int[] { 0, 1, 0, 0 },
                 new int[] { 1, 1, 0, 0 },
             };
-            var actual = CalculateIslandPerimeter.IslandPerimeter(grid);
+            var actual = CalculateIslandPerimeter_463.IslandPerimeter(grid);
             var expected = 16;
 
             Assert.AreEqual(expected, actual);

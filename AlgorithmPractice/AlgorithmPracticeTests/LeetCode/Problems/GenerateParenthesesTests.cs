@@ -11,7 +11,7 @@ namespace AlgorithmPractice.LeetCode.Problems.Tests
         public void GenerateParenthesisWithNEqualOne()
         {
             var n = 1;
-            var actual = GenerateParentheses.GenerateParenthesis(n).ToList();
+            var actual = GenerateParentheses_22.GenerateParenthesis(n).ToList();
             var expected = new List<string> { "()" };
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -20,7 +20,7 @@ namespace AlgorithmPractice.LeetCode.Problems.Tests
         public void GenerateParenthesisWithNEqualThree()
         {
             var n = 3;
-            var actual = GenerateParentheses.GenerateParenthesis(n).ToList();
+            var actual = GenerateParentheses_22.GenerateParenthesis(n).ToList();
             var expected = new List<string> { "((()))", "(()())", "(())()", "()(())", "()()()" };
             CollectionAssert.AreEqual(expected, actual);
         }

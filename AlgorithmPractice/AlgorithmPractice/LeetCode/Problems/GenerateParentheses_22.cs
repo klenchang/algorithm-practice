@@ -2,13 +2,15 @@
 
 namespace AlgorithmPractice.LeetCode.Problems
 {
-    public class GenerateParentheses
+    public class GenerateParentheses_22
     {
         #region topic
         /*
          give a number n, write a function to generate all combinations of well-formed parentheses.
          ex. n = 3, output = ["((()))","(()())","(())()","()(())","()()()"]
              n = 1, output = ["()"]
+
+         copy@right:https://leetcode.com/problems/generate-parentheses/
          */
         #endregion
 

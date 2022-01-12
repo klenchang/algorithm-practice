@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AlgorithmPractice.LeetCode.Problems.Graph.Easy
 {
-    public class FindCenterOfStar
+    public class FindCenterOfStar_1791
     {
         #region topic
         /*

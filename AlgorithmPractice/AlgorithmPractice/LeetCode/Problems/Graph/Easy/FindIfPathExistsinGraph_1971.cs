@@ -2,7 +2,7 @@
 
 namespace AlgorithmPractice.LeetCode.Problems.Graph.Easy
 {
-    public class FindIfPathExistsinGraph
+    public class FindIfPathExistsinGraph_1971
     {
         #region topic
         /*

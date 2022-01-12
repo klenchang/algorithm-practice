@@ -1,6 +1,6 @@
 ﻿namespace AlgorithmPractice.LeetCode.Problems
 {
-    public class FindJudge
+    public class FindJudge_997
     {
         /*
         In a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge.

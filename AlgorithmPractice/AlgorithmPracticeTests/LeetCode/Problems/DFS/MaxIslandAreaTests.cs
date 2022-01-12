@@ -15,7 +15,7 @@ namespace AlgorithmPractice.LeetCode.Problems.DFS.Tests
                 new [] { 1, 1, 0, 0, 1 },
                 new [] { 0, 1, 0, 1, 1 },
             };
-            var actual = MaxIslandArea.MaxAreaOfIsland(grid);
+            var actual = MaxIslandArea_695.MaxAreaOfIsland(grid);
             var expected = 7;
 
             Assert.AreEqual(expected, actual);
