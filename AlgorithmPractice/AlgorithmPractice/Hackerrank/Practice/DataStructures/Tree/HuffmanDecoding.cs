@@ -28,12 +28,13 @@ namespace AlgorithmPractice.Hackerrank.Practice.DataStructures.Tree
             public DecodingNode left;
             public DecodingNode right;
         }
-        public static void Decode(string s, DecodingNode root)
+        public static string Decode(string s, DecodingNode root)
         {
-            if (root == null) return;
+            if (root == null) 
+                return null;
+            
             string result = "";
             DecodingNode temp = root;
-
             foreach (char c in s)
             {
                 temp = c == '0' ? temp.left : temp.right;
@@ -43,7 +44,7 @@ namespace AlgorithmPractice.Hackerrank.Practice.DataStructures.Tree
                     temp = root;
                 }
             }
-            Console.WriteLine(result);
+            return result;
         }
     }
 }

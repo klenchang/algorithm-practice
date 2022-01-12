@@ -10,8 +10,8 @@ namespace AlgorithmPractice.Hackerrank.Practice.DataStructures.Tree
            2
             \
              5
-            /  \
-           3    6
+            / \
+           3   6
             \
              4
         
