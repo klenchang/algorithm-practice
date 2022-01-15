@@ -9,7 +9,7 @@ namespace AlgorithmPractice.LeetCode.Problems.Graph.Medium.Tests
         public void RegionsBySlashesTest()
         {
             var grid = new[] { "/\\", "\\/" };
-            var actual = RegionsCutBySlashes.RegionsBySlashes(grid);
+            var actual = RegionsCutBySlashes_959.RegionsBySlashes(grid);
             var expected = 5;
 
             Assert.AreEqual(expected, actual);

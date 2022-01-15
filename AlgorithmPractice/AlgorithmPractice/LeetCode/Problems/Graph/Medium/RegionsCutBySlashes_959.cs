@@ -2,7 +2,7 @@
 
 namespace AlgorithmPractice.LeetCode.Problems.Graph.Medium
 {
-    public class RegionsCutBySlashes
+    public class RegionsCutBySlashes_959
     {
         #region topic
         /*
